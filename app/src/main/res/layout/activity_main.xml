@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbackground"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/diceimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dicee_logo" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="20dp"
+        >
+         <ImageView
+             android:layout_width="150dp"
+             android:layout_height="190dp"
+             android:src="@drawable/dice1"
+             android:id="@+id/leftdice">
+
+         </ImageView>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:src="@drawable/dice2"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/rightdice"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <Button
+                android:id="@+id/roll"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:text="Roll">
+
+            </Button>
+
+        </RelativeLayout>
+
+</LinearLayout>
